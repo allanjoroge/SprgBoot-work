@@ -13,11 +13,6 @@ public class EmployeeController {
 	@Autowired
 	private EmployeeImpl emImpl;
 	
-	@GetMapping("/hello")
-	public String hello() {
-		return "Hello";
-	}
-	
 	@GetMapping("/employees")
 	public List<Employee> getEmployees() {
 		return emImpl.getAllEmployees();
